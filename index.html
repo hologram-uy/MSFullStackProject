@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Personal portfolio website showcasing projects, skills, and contact information.">
+    <title>Accessible Portfolio</title>
+    <link rel="stylesheet" href="styles.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
+</head>
+<body>
+    
+    <!-- Header & Navigation -->
+    <header>
+        <nav role="navigation" aria-label="Main Navigation">
+            <ul>
+                <li><a href="#about-me">About Me</a></li>
+                <li><a href="#projects">Projects</a></li>
+                <li><a href="#skills">Skills</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+    
+    <main>
+        <p>This is a simple HTML structure example.</p>
+        <!-- About Me Section -->
+        <section id="about-me" aria-labelledby="about-me-heading">
+            <h2 id="about-me-heading">About Me</h2>
+            <p>Hello! I'm a passionate web developer specializing in front-end technologies.</p>
+        </section>
+        
+        <!-- Projects Section -->
+        <section id="projects" aria-labelledby="projects-heading">
+            <h2 id="projects-heading">Projects</h2>
+            <article>
+                <figure>
+                    <img src="https://www.hologram.com.uy/wp-content/uploads/photo-gallery/2-LiloPDF-NET-UI1.png?bwg=1741292831" alt="Screenshot of Project 1 - A desktop application for managing PDFs">
+                    <figcaption>Project 1 - A desktop application.</figcaption>
+                </figure>
+            </article>
+            <article>
+                <figure>
+                    <img src="https://www.hologram.com.uy/wp-content/uploads/photo-gallery/4-Farmacia-Store-NET-CRUD-articulos.png?bwg=1741290666" alt="Screenshot of Project 2 - A dynamic web app for managing pharmacy inventory">
+                    <figcaption>Project 2 - A dynamic web app.</figcaption>
+                </figure>
+            </article>
+        </section>
+        
+        <!-- Skills Section -->
+        <section id="skills" aria-labelledby="skills-heading">
+            <h2 id="skills-heading">Skills</h2>
+            <ul>
+                <li>
+                    <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/html5/html5-original.svg" alt="HTML5 Icon" width="30" height="30">
+                    HTML
+                </li>
+                <li>
+                    <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/css3/css3-original.svg" alt="CSS3 Icon" width="30" height="30">
+                    CSS
+                </li>
+                <li>
+                    <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/javascript/javascript-original.svg" alt="JavaScript Icon" width="30" height="30">
+                    JavaScript
+                </li>
+                <li>
+                    <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/google/google-original.svg" alt="SEO Icon" width="30" height="30">
+                    SEO
+                </li>
+                <li>
+                    <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/angularjs/angularjs-original.svg" alt="Angular Icon" width="30" height="30">
+                    Angular
+                </li>
+            </ul>
+        </section>
+        
+        <!-- Contact Section -->
+        <section id="contact" aria-labelledby="contact-heading">
+            <h2 id="contact-heading">Contact Me</h2>
+            <form id="contact-form" aria-label="Contact Form">
+                <label for="name">Name:</label>
+                <input type="text" id="name" name="name" required aria-required="true">
+                
+                <label for="email">Email:</label>
+                <input type="email" id="email" name="email" required aria-required="true">
+                
+                <label for="message">Message:</label>
+                <textarea id="message" name="message" required aria-required="true"></textarea>
+                
+                <button type="submit" id="submit-button">Send</button>
+            </form>
+        </section>
+    </main>
+    
+    <!-- Footer -->
+    <footer>
+        <p>&copy; 2025 My Website</p>
+    </footer>
+    <script defer src="script.js"></script>
+</body>
+</html>
